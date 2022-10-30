@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+<head>
+        <title>Upload Image</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!--css-->
+        <link rel="stylesheet" href="./css/upload-image.css">
+</head>
+<body>
+        <h1>Show a File Content</h1>
+        <div id="image-grid">            
+        </div>
+        <form action="FileUploadServlet" method="post" enctype="multipart/form-data">
+            Image Link: <input type="file" id="file-uploader" name="file" accept=".jpg, .jpeg, .png" multiple> </br>
+            <input type="submit" name="submit" value="Submit">                
+        </form>
+    
+    <!--Custom js-->
+    <script src="./js/upload-image.js"></script>
+</body>
+</html>
